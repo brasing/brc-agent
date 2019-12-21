@@ -3,7 +3,6 @@ update-deps:
 	pip-compile --upgrade --build-isolation --generate-hashes --output-file requirements.txt requirements.in
 
 init:
-	pip install --editable .
 	pip install --upgrade -r requirements.in
 	rm -rf .tox
 
